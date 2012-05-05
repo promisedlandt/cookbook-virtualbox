@@ -25,11 +25,11 @@ when "debian", "ubuntu"
     notifies :run, "execute[apt-get update]", :immediately
   end
 
-  package "virtualbox-4.1" do
+  package "dkms" do
     action :install
   end
 
-  package "dkms" do
+  package "virtualbox-4.1" do
     action :install
   end
 end
